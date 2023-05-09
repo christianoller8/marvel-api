@@ -1,0 +1,29 @@
+<mat-toolbar class="marveltoolbar">
+  <div class="flex justify-content-between align-items-center w-100">
+    <span class="cursor-pointer" routerLink="home">Marvel Exam</span>
+    <div *ngIf="isDesktop" class="toolbar-buttons">
+      <button routerLink="home" mat-button>Home</button>
+      <button routerLink="characters" mat-button>Series</button>
+      <button (click)="logOut()" mat-button>Logout</button>
+    </div>
+    <div *ngIf="!isDesktop">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+        </button>
+        <button mat-menu-item routerLink="characters">
+          <mat-icon>people</mat-icon>
+          <span>Series</span>
+        </button>
+        <button mat-menu-item (click)="logOut()">
+          <mat-icon>exit_to_app</mat-icon>
+          <span>Logout</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>

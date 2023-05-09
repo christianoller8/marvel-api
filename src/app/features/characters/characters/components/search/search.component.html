@@ -1,0 +1,15 @@
+<form [formGroup]="searchForm" class="example-form">
+  <mat-form-field class="example-full-width">
+    <span matPrefix> </span>
+    <input
+      type="tel"
+      matInput
+      formControlName="search"
+      placeholder="Search"
+      name="search"
+      (keyup.enter)="onSearch()"
+    />
+    <button matSuffix mat-button>Press Enter</button>
+  </mat-form-field>
+  <br />
+</form>

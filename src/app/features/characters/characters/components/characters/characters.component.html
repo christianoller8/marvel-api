@@ -1,0 +1,40 @@
+<div class="flex justify-content-between flex-wrap mt-5 ml-5">
+  <div class="search">
+    <app-search (searchDone)="onSearch($event)"></app-search>
+  </div>
+  <mat-paginator
+    #paginator
+    class="demo-paginator"
+    (page)="handlePageEvent($event)"
+    [length]="length"
+    [pageSize]="pageSize"
+    [disabled]="disabled"
+    [showFirstLastButtons]="showFirstLastButtons"
+    [pageSizeOptions]="[]"
+    [hidePageSize]="hidePageSize"
+    [pageIndex]="pageIndex"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</div>
+<div class="main">
+  <div class="card" *ngFor="let serie of series">
+    <mat-card class="example-card">
+      <a routerLink="/characters/{{ serie.id }}">
+        <img
+          class="creator-image"
+          mat-card-image
+          alt=""
+          src="{{ serie.thumbnail.path + '.' + serie.thumbnail.extension }}"
+        />
+      </a>
+      <mat-card-content>
+        <p>
+          {{ serie.title }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<!--  -->

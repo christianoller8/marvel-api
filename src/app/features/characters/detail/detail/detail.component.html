@@ -1,0 +1,43 @@
+<div class="container">
+  <h1 class="title">{{ serie.title }}</h1>
+  <div class="content">
+    <div class="left">
+      <img
+        class="image"
+        src="{{ serie.thumbnail.path + '.' + serie.thumbnail.extension }}"
+        alt=""
+      />
+    </div>
+    <div class="right">
+      <form [formGroup]="tableForm">
+        <table mat-table [dataSource]="[tableData]">
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Id</th>
+            <td mat-cell *matCellDef="let element">{{ serie.id }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell *matCellDef="let element">{{ serie.title }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="modified">
+            <th mat-header-cell *matHeaderCellDef>Date</th>
+            <td mat-cell *matCellDef="let element">
+              {{ serie.modified }}
+            </td>
+          </ng-container>
+
+          <tr
+            mat-header-row
+            *matHeaderRowDef="['id', 'title', 'modified']"
+          ></tr>
+          <tr
+            mat-row
+            *matRowDef="let row; columns: ['id', 'title', 'modified']"
+          ></tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</div>

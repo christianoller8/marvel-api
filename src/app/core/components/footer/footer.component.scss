@@ -1,0 +1,57 @@
+footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 50px 0;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #727272;
+  text-decoration: none;
+}
+
+hr {
+  border-top: 1px solid #7a7979;
+  margin: 20px 0;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.marvel-logo {
+  width: 100px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  footer {
+    padding: 5px;
+    font-size: 12px;
+  }
+}

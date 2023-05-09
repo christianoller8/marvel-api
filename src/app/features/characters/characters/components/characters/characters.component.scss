@@ -1,0 +1,37 @@
+// .first {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search {
+  margin-top: 5px;
+}
+
+.card {
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+.creator-image {
+  max-width: calc((390px) / 1.5);
+  min-width: calc((390px) / 1.5);
+  max-height: calc((592px) / 1.5);
+  min-height: calc((592px) / 1.5);
+  object-fit: cover;
+  object-position: center;
+}

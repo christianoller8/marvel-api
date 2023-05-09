@@ -1,0 +1,75 @@
+.background {
+  background-image: linear-gradient(to bottom, #000000, #b3242a);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #d60909;
+}
+
+p {
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  background-color: #0e0d0d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilos para pantallas de tamaño medio */
+  img {
+    width: 64%;
+    margin-bottom: 0;
+  }
+
+  .image-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Estilos para pantallas grandes */
+  h2 {
+    font-size: 50px;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  .buttons {
+    margin-top: 30px;
+  }
+}
