@@ -5,8 +5,6 @@
 <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular">
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="Angular">
 
-# Second Exam
-
 ## Christian Oller Vilchez - 09/05/2023
 
 ## About Project 🚀
