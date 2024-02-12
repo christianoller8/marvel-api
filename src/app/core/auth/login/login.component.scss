@@ -1,7 +1,20 @@
 :host {
   display: flex;
   justify-content: center;
-  margin: 100px 0px;
+  margin: 288px 0px;
+}
+
+.background-blur {
+  position: absolute; /* o 'fixed' si quieres que se mantenga al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/deadpool-wp.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px); /* Aplica el desenfoque directamente a la imagen de fondo */
+  z-index: -1; /* Asegura que el fondo esté detrás del contenido del formulario */
 }
 
 .mat-form-field {
