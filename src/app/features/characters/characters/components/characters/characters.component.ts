@@ -16,7 +16,7 @@ export class CharactersComponent implements OnInit {
   series: Series[] = [];
 
   length = 0;
-  pageSize = 9;
+  pageSize = 25;
   pageIndex = 0;
   hidePageSize = false;
   showPageSizeOptions = true;
@@ -44,7 +44,7 @@ export class CharactersComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.listService.getAllCharacters(0, 9).pipe(
+    this.listService.getAllCharacters(0, 50).pipe(
       tap((data: any) => {
         this.length = data.data.total;
       }),

@@ -42,4 +42,8 @@ export class DetailComponent implements OnInit {
       });
     });
   }
+
+  goBack() {
+    window.history.back();
+  }
 }

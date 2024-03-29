@@ -51,6 +51,22 @@ tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
+.go-back-button {
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  padding: 10px 20px; /* Ajusta el relleno para hacer el botón más grande o más pequeño */
+  font-size: 16px; /* Tamaño de la fuente del botón */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Bordes redondeados para el botón */
+  transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+}
+
+.go-back-button:hover {
+  background-color: #0056b3; /* Color de fondo del botón al pasar el mouse por encima */
+}
+
 @media only screen and (max-width: 768px) {
   .content {
     flex-direction: column;

@@ -17,24 +17,29 @@
   >
   </mat-paginator>
 </div>
-<div class="main">
-  <div class="card" *ngFor="let serie of series">
-    <mat-card class="example-card">
-      <a routerLink="/characters/{{ serie.id }}">
-        <img
-          class="creator-image"
-          mat-card-image
-          alt=""
-          src="{{ serie.thumbnail.path + '.' + serie.thumbnail.extension }}"
-        />
-      </a>
-      <mat-card-content>
-        <p>
-          {{ serie.title }}
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </div>
+
+<div class="grid m-3 justify-content-center">
+  <ng-container *ngFor="let serie of series">
+    <div *ngIf="serie.thumbnail && serie.thumbnail.path && !serie.thumbnail.path.endsWith('image_not_available')" class="p-col-12 p-md-6 p-lg-4 p-xl-2">
+      <mat-card class="example-card">
+        <a routerLink="/characters/{{ serie.id }}">
+          <img
+            class="creator-image"
+            mat-card-image
+            alt=""
+            [src]="serie.thumbnail.path + '.' + serie.thumbnail.extension"
+          />
+        </a>
+        <mat-card-content>
+          <p>
+            {{ serie.title }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </ng-container>
 </div>
+
+
 
 <!--  -->
