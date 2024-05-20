@@ -15,7 +15,7 @@ export class ListService {
   ts = 1;
   hash = "bc2909e59101bfc0ba79e0f37a8cdf01";
   urlAcces =
-    "http://gateway.marvel.com/v1/public/series?ts=1&apikey=0a96d4363b0c58d41704bcd4aa21e4c1&hash=bc2909e59101bfc0ba79e0f37a8cdf01";
+    "https://gateway.marvel.com/v1/public/series?ts=1&apikey=0a96d4363b0c58d41704bcd4aa21e4c1&hash=bc2909e59101bfc0ba79e0f37a8cdf01";
 
   constructor(private http: HttpClient) {}
 
