@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $VERCEL_GIT_COMMIT_REF == "master" ]] ; then
+if [[ $VERCEL_GIT_COMMIT_REF == "main" ]] ; then
   echo "This is our master branch"
   npm run build:production
 else

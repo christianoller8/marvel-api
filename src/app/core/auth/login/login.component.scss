@@ -2,22 +2,18 @@
   display: flex;
   justify-content: center;
   align-items: center; /* Asegúrate de centrar el contenido verticalmente */
-  margin-top: 153px;
-  margin-bottom: 200px;
   background-image: url('/assets/images/deadpool-wp.jpeg'); /* Ruta a la imagen */
   background-size: cover;
   background-position: center;
   width: 100%; /* Asegura que cubra todo el ancho */
   height: 100vh; /* Asegura que cubra toda la altura visible */
-  position: fixed; /* Opción para asegurar que cubra toda la pantalla */
-  top: 0;
+
   left: 0;
-  overflow: auto; /* Para manejar el desbordamiento del contenido */
-  -webkit-backdrop-filter: blur(5px); /* Para Safari */
+  overflow: auto;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px); /* Efecto difuminado */
 }
 
-/* Es posible que necesites ajustar otros estilos para asegurar que el contenido se muestre correctamente encima de tu imagen de fondo difuminada. */
 .mat-form-field {
   width: 100%;
   min-width: 300px;

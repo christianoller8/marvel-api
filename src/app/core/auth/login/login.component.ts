@@ -18,8 +18,8 @@ export class LoginComponent {
     private authService: AuthService,
   ) {
     this.loginForm = this.fb.group({
-      publicKey: ["", Validators.required],
-      privateKey: ["", Validators.required],
+      publicKey: ["ebe435710d107a3a1fc3115018320a9c", Validators.required],
+      privateKey: ["731731ac3c6604612f67b344c7ecdff50e66b8d7", Validators.required],
     });
   }
 
