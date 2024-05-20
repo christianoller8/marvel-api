@@ -9,7 +9,7 @@ import { md5 } from "src/app/core/utils/utils";
   providedIn: "root",
 })
 export class ListService {
-  apiUrl = "http://gateway.marvel.com/v1/public/series";
+  apiUrl = "https://gateway.marvel.com/v1/public/series";
   publicKey = "0a96d4363b0c58d41704bcd4aa21e4c1";
   privateKey = "c997b623f2582a0b4c34f1c8153c13e8f82664d0";
   ts = 1;
